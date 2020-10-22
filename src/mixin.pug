@@ -1,0 +1,108 @@
+//- меню хедера
+
+-
+    var headerlist = [
+        {name:"Сервисное обслуживание", src:"./src/img/header-red-dot.png", alt:" red-dot"},
+        {name:"Монтаж", src:"./src/img/header-red-dot.png", alt:"red-dot"},
+        {name:"Оригинальные запасные части", src:"./src/img/header-red-dot.png", alt:"red-dot"},
+    ]
+
+mixin headerlist
+    .header-list.text-right
+        - for (var x = 0; x < headerlist.length; x++)
+            .header-list-item.text-md-right.text-left.d-flex.align-items-center.justify-content-end
+                .header-list-item-dot
+                    img(src=headerlist[x].src alt=headerlist[x].alt class="d-md-block d-none") 
+                .header-list-item-text
+                    p=headerlist[x].name
+
+//- список рядом с картинкой мужика
+
+-
+    var mainbotlist = [
+        {name: "Центры обработки данных (ЦОД)"},
+        {name: "Текстильное пищевое фармацевтическое производство"},
+        {name: "Компьютерные залы и станции связи"},
+        {name: "Оранжереи"},
+        {name: "«Чистые» помещения"},
+        {name: "Холодильные камеры и др."},
+    ]
+
+mixin mainbotlist
+        for inner in mainbotlist
+            li.main-bot-list-item=inner.name
+
+//- карусель картинок
+
+-
+    var carousel = [
+        {src: "./src/img/WdpRMF2EG1s.jpg", alt: "1"},
+        {src: "./src/img/DpirSoBSEVM.jpg", alt: "2"},
+        {src: "./src/img/gvw-L6Wa5hM.jpg", alt: "3"},
+        {src: "./src/img/xUQfME-1DAA.jpg", alt: "4"},
+        {src: "./src/img/XRejVfrjbZA.jpg", alt: "5"},
+        {src: "./src/img/LzJefnBqyaU.jpg", alt: "6"},
+        {src: "./src/img/WdpRMF2EG1s.jpg", alt: "7"},
+        {src: "./src/img/WdpRMF2EG1s.jpg", alt: "8"},
+    ]      
+
+mixin carousel       
+    - for (var x = 0; x < carousel.length; x++)
+        .cert-item
+            a(href=carousel[x].src data-fancybox="reviews" data-caption=carousel[x].alt)
+                img(src=carousel[x].src)
+
+
+//- документация модалки
+-
+    var docslist = [
+        {name:"CAREL | Руководство по эксплуатации | Увлажнители воздуха humiSteam Basic | RU"},
+        {name:"(PDF, 5.66 МБ)"},
+    ]
+
+mixin docslist
+    .docs-list
+         - for (var x = 0; x < docslist.length; x++)
+            p=docslist[x].name   
+
+
+//- список характеристик в модалке
+-
+    var charslist = [
+        {name: "Бренд", value: "Carel"},
+        {name:"Номинальная производительность", value:"1,5 кг/ч"},
+        {name:"Макс. потребляемая мощность", value:"1,12 кВт"},
+        {name:"Параметры электропитания", value:"1~, 220В"},
+        {name:"Присоединение линии пара", value:"Ø 22/30 мм"},
+        {name:"Количество цилиндров", value:"1"},
+        {name:"Размеры оборудования (ВхШхГ)", value:"712х365х275 мм"},
+        {name:"Размеры упаковки (ВхШхГ)", value:"850х500х400 мм"},
+        {name:"Вес НЕТТО", value:"13,5 кг"},
+        {name:"Вес БРУТТО", value:"16 кг"},
+    ]
+    
+mixin charslist 
+    .chars-list
+        - for (var x = 0; x < charslist.length; x++)
+            .chars-list-item.d-flex.justify-content-between
+                .chars-list-item-name
+                    p=charslist[x].name
+                .chars-list-item-value
+                    p=charslist[x].value
+
+//- описание серии в модалке в модалке
+
+-
+    var desclist = [
+        {name:"В основе работы увлажнителей с погружными электродами лежит простой физический закон. Обычная питьевая вода содержит некоторое количество растворенных минеральных солей, а значит, имеет определенную электропроводность. Если подать напряжение на погруженные в воду электроды, получится электрический ток, который нагревает воду до кипения (эффект Джоуля), и в процессе кипения выделяется пар."},
+        {name:"humiSteam - это универсальные увлажнители, пригодные для решения широкого круга задач по увлажнению воздуха от обычных жилых домов до производственных помещений и даже саун. Воздух может увлажняться непосредственно в помещении при помощи вентиляторного парораспределителя или в системе воздуховодов при помощи высокоэффективных линейных парораспределителей. Увлажнители humiSteam работают на водопроводной воде."},
+        {name:"Есть следующие разновидности «электродных» увлажнителей HumiSteam:"},
+        {name:"– Basic, самый простой вариант для решения любых задач по увлажнению воздуха паром. В основном используется в связке с другим увлажнителем HumiSteam типа X-Plus по принципу Ведущий/Ведомый;"},
+        {name:"– X-Plus, мощный увлажнитель с погружными электродами. Комплектуется встроенным контроллером типа «X» серии pCO, жидкокристаллическим дисплеем и кнопками для управления и настройки параметров;"},
+        {name:"– Wellness, специальный вариант парового увлажнения воздуха для саун. Имея принцип работы, как у модели «Xplus», увлажнитель humiSteam Wellness поддерживает встроенные функции управления специально для саун."},
+    ]
+
+mixin desclist
+    .desc-list
+        - for (var x = 0; x < desclist.length; x++)
+            p=desclist[x].name    

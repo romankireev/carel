@@ -1,0 +1,55 @@
+section.main-catalog.position-relative
+    .main-catalog-grey-bg
+    .main-catalog-red-triangle 
+    .container
+        .row
+            .col-lg-9.col-md-9
+            .catalog-title Каталог увлажнителей
+    .container
+        .row.justify-content-between.catalog-row
+            .col-lg-3.col-md-3.col-sm-3
+                .catalog-button
+                    span Изометрические увлажнители
+            .col-lg-3.col-md-3.col-sm-3
+                .catalog-button
+                    span Адиабатические увлажнители
+            .col-lg-3.col-md-3.col-sm-3
+                .catalog-button
+                    span Испарительное охлаждение
+    .container.main-catalog-items
+        .row
+            .col-lg-3.col-md-4.main-catalog-scroll
+                .point
+                ul.main-catalog-scroll-list.position-relative
+                    li.main-catalog-scroll-list-item Увлажнители с погружными электродами UE* humiSteam
+                    li.main-catalog-scroll-list-item Увлажнители с погружными электродами UER* thermoSteam
+                    li.main-catalog-scroll-list-item Увлажнители с погружными электродами CH* compactSteam
+                    li.main-catalog-scroll-list-item Увлажнители с электронагревателями UR*4 heaterSteam
+                    li.main-catalog-scroll-list-item Газовые влажнители UG* gaSteam
+            .col-lg-8.col-md-9.main-catalog-content.justify-content-between
+                .row
+                    .col-lg-8.col-md-8.col-sm-8.col-6.main-catalog-content-top.d-flex.align-items-left
+                        .main-catalog-content-title Увлажнители с погружными электродами UE* humiSteam
+                        .main-catalog-content-subtitle humiSteam
+                        .main-catalog-content-remark Увлажнители с погружными электродами
+                    .col-lg-4.col-md-4.col-sm-4.main-catalog-content-logo.d-flex.justify-content-end UE
+                .main-catalog-content-desc humiSteam - это универсальные увлажнители, пригодные для решения широкого круга задач по увлажнению воздуха от обычных жилых домов до производственных помещений и даже саун. Общая производительность серии от 1,5 до 130 кг/ч.
+                .main-catalog-items-title Выберите модель:
+                .row
+                    .col-4
+                        .main-catalog-btn
+                            span UE Basic
+                    .col-4
+                        .main-catalog-btn
+                            span UE X-Plus
+                    .col-4
+                        .main-catalog-btn
+                            span UE Welness
+                .row
+                    .main-catalog-items-desc «Basic» (UE*Y) Самый простой вариант для решения любых задач по увлажнению воздуха паром. Представлен моделями производительностью от 1 до 65 кг/ч, комплектуется стандартным электронным контроллером (Y) и дисплеем. 
+                .row
+                    - for (var x = 0; x < 12; x++)
+                        include ./catalog-row.pug
+
+
+

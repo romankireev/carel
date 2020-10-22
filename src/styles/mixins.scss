@@ -1,0 +1,24 @@
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin button($pos: relative, $d: flex, $ai: center, $just: center, $transform: skew(-20deg), $b_rad: 4px, $wd: 100%){
+    position: $pos;
+    display: $d;
+    align-items: $ai;
+    justify-content: $just;
+    transform: $transform;
+    border-radius: $b_rad;
+    width: $wd;
+}
+
+@mixin button_span($transform: skew(20deg), $width: 100%, $position: absolute, $ta: center, $va: middle, $top: calc(50%-12px)){
+    transform: $transform;
+    width: $width;
+    position: $position;
+    top: $top;
+    text-align: $ta;  
+}
+    

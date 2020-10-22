@@ -1,0 +1,58 @@
+.main-certs {
+    transform: rotate(8deg);
+    background: #ebebeb;
+    padding: 70px 0 180px 0;
+    width: 110%;
+    margin-left: -40px;
+    .container {
+        transform: rotate(-8deg); 
+    }
+}
+
+.main-certs-title {
+    color: #ff0000;
+    font-size: 50px;
+    line-height: 74px;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.main-certs-text {
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 40px;
+}
+
+.owl-images {
+    position: relative;
+}
+
+.owl-carousel {
+    width: 100%;
+    z-index: 1;
+}
+
+.owl-prev {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 0;
+}
+.owl-next {
+    position: absolute;
+    top: calc(50% - 20px);
+    right: 0;
+}
+
+.arrow {
+    border: 0;
+}
+
+.cert-item {
+    img {
+        width: 170px;
+        height: 230px;
+    }   
+}
+
+
+

@@ -1,0 +1,198 @@
+.main-catalog {
+    margin-bottom: 70px;
+    margin-top: 100px;
+}
+.main-catalog-grey-bg {
+    max-width: 650px;
+    height: calc(100% + 63px);
+    position: absolute;
+    background: #F8F8F8;
+    width: 100%;
+    z-index: -2;
+    top: -63px;
+}
+
+.main-catalog-red-triangle {
+    height: 900px;
+    width: 380px;
+    clip-path: polygon(380px 811px, 380px 4px, 86px 774px);
+    background-color: red;
+    bottom: -280px;
+    right: 0;
+    position: absolute;
+}
+
+.catalog-title {
+    height: 143px;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FF0000;
+    font-weight: 900;
+}
+
+.catalog-button {
+    @include button;
+    &::before {
+        @include pseudo;
+        opacity: 0;
+        border: 15px solid transparent;
+        border-top: 15px solid #ff0000;
+        bottom: -30px;
+        left: 48%;
+    }
+    background-color: #ffe8e8;
+    border-radius: 4px;
+    height: 82px;
+    span {
+        @include button_span;
+        color: #ff0000;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+}
+
+.main-catalog-items {
+    margin-top: 120px;
+}
+
+.main-catalog-scroll {
+    .point {
+        min-height: 10px;
+        min-width: 11px;
+        background: red;
+        transform: skew(-20deg);
+        border-radius: 2px;
+        position: absolute;
+        top: 6%;
+        left: 10px;
+    }
+}
+
+.main-catalog-scroll-list {
+    list-style: none;
+    padding-left: 30px;
+    margin: 0;
+    border-left: 2px solid red;
+    .main-catalog-scroll-list-item {
+        &:active {
+            color: red;
+        }
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 20px;        
+    }
+}
+
+.main-catalog-content-top {
+    flex-direction: column;
+    .main-catalog-content-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .main-catalog-content-subtitle {
+        font-size: 30px;
+        line-height: 44px;
+    }
+    .main-catalog-content-remark {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+.main-catalog-content-logo {
+    font-size: 110px;
+    line-height: 162px;
+    color: red;
+    font-weight: bold;
+}
+
+.main-catalog-content-desc {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.main-catalog-items-title {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.main-catalog-btn {
+    background: #FFE8E8;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 58px;
+    position: relative;
+    transform: skew(-20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        @include button_span;
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+.main-catalog-items-desc {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.main-catalog-item {
+    padding: 25px 15px;
+    height: 100%;
+    .main-catalog-item-image {
+        max-width: 169px;
+        margin: 15px auto;
+    }
+    .main-catalog-item-title {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 10px;
+    }
+    .main-catalog-item-text {
+        margin-bottom: 10px;
+    }
+}
+.main-catalog-item-bottom-form {
+    .main-catalog-bottom-price {
+        span{
+            &:first-child{
+                font-size: 18px;
+                font-weight: 500;
+                min-width: 95px;
+                }
+            &:last-child{
+                font-size: 14px;
+                font-weight: 400;
+                color: #ADADAD;
+                }    
+        }
+    }
+    .main-catalog-bottom-btn {
+        @include button;
+        max-width: 129px;
+        border: 1px solid #FF0000;
+        color: #ff0000;
+        max-height: 40px;
+        span {
+            @include button_span;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            max-width: 129px;
+        }
+    }
+}
+
+
+
+

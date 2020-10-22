@@ -1,0 +1,28 @@
+section
+        .left-triangle
+        .right-glass.d-xl-block.d-none(style="background-image: url(./img/first-rectangle.png)")
+        .container 
+            .row.justify-content-between 
+                .col-xl-3.col-sm-4
+                    img(class="img-logo" src='img/carel-logo.png' alt='CAREL')
+                .col-lg-3.text-right.col-md-3.col-sm-4.col-7
+                    a.text-decoration-none.tell(href='#') +7 (965) 390-46-99
+                    br
+                    a.rev-call(href="#") Обратный звонок
+                .row.justify-content-between
+                    .col-lg-6.col-sm-10
+                        img(class="img-artic-main position-relative" src='img/article123.png' alt="Main image")
+                    .text-md-right.text-sm-center.text-right.col-md-6.col-12
+                        p(class="header-title-text") Увлажнители CAREL
+                        .header-list-item.d-flex
+                            .point.d-md-block.d-none
+                            .header-list-item-text Сервисное обслуживание
+                        .header-list-item
+                            .point.d-md-block.d-none
+                            .header-list-item-text Монтаж
+                        .header-list-item
+                            .point.d-md-block.d-none
+                            .header-list-item-text Оригинальные запасные части
+                    .btn-header
+                        button(class="but_chos_item position-relative")
+                            span(class="position-absolute") Выбрать товар  

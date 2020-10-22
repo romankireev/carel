@@ -1,0 +1,85 @@
+.modal.fade(id="carel-modal" tabindex="-1")
+    .modal-dialog
+        .modal-content
+            .modal-header
+                button.close(type="button" data-dismiss="modal" aria-label="close")
+                    span(aria-hidden="true") &times;
+            .modal-body
+                .modal-container
+                    .row.justify-content-md-center.justify-content-between
+                        .col-lg-4.col-md-4.col-12.d-flex.flex-column.justify-content-between
+                            .row
+                                a.mod-image-link(data-fancybox='gallery' href="./src/img/modal-image.png")
+                                    img.mod-image(src="./src/img/modal-image.png")
+                                    img.search-logo(src="./src/img/search-logo.png")
+                            .row.justify-content-between
+                                .col-12
+                                    .docs
+                                        .docs-title-block
+                                            button.chars-title(type='button' data-toggle='collapse' data-target='#docsList' aria-controls='docsList')
+                                                span Документы   
+                                                .chars-arrow
+                                                    span
+                                                    span  
+                                        .collapse.show(id="docsList")   
+                                            .chars-list
+                                                +docslist        
+                        .col-lg-7.col-12
+                            .row
+                                .col-12
+                                    .mod-title UE001YD001 Паровой увлажнитель CAREL humiSteam Basic 1,5 кг/ч
+                                    .mod-text.d-flex.flex-column
+                                        .mod-text-title Описание
+                                        .mod-text-desc UE001YD001 Паровой увлажнитель CAREL humiSteam Basic 1,5 кг/ч, 1x230В, неразборный цилиндр
+                                    .mod-text.d-flex.flex-column
+                                        .mod-text-title Description
+                                        .mod-text-desc humiSteam Basic 1.5 kg/h, 230 V single phase, ON/OFF or proportional, disposable cylinder
+                                    .mod-cost-block.d-flex.justify-content-between
+                                        .mod-cost-block-name Арт. UE001YD001
+                                        .mod-cost-block-cost.d-flex.flex-column
+                                            .mod-guarantee.d-flex.align-items-center
+                                                .mod-guarantee-order Под заказ
+                                                .mod-guarantee-year Гарантия 24 месяца
+                                            .mod-price.d-flex.align-items-center
+                                                .mod-price-rub 66021 руб.
+                                                .mod-price-eur (€ 904 )
+                                    .mod-button-block.d-flex.justify-content-between
+                                        .mod-button-counter.d-flex.justify-content-center
+                                            .button-plus 
+                                                span -
+                                            .button-count 
+                                                span 1
+                                            .button-minus 
+                                                span +
+                                        .mod-button-order
+                                            span Заказать  
+                                    .col-lg-7
+                                        .chars
+                                            .chars-title-block
+                                                button.chars-title(type='button' data-toggle='collapse' data-target='#charsList' aria-controls='charsList')
+                                                    span Характеристики   
+                                                    .chars-arrow
+                                                        span
+                                                        span  
+                                            .collapse.show(id="charsList")   
+                                                .chars-list
+                                                    +charslist
+                    .row
+                        .col-lg-12.col-12
+                            .desc
+                                .desc-title-block
+                                    button.chars-title(type='button' data-toggle='collapse' data-target='#descList' aria-controls='descList')
+                                            span Описание серии 
+                                            .chars-arrow
+                                                span
+                                                span  
+                                    .collapse.show(id="descList")   
+                                        .desc-list
+                                            +desclist
+
+
+
+
+                                 
+
+

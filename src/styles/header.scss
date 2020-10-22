@@ -1,0 +1,130 @@
+header{
+    position: relative;
+    height: 100vh;
+    min-height: 974px;
+    overflow: visible;
+    &-menu{
+        &-element{
+            display: inline-flex;
+            align-items: center;
+        }
+        &-text{
+            p{
+            font-family: 'Circe Bold';
+            font-size: 56px; 
+            line-height: 56px;
+            }
+        }   
+    }
+}
+
+header section {
+    padding-top: 40px;
+}
+
+header section .container {
+    margin-bottom: 96px;
+}
+
+header section .container:last-child {
+    margin-bottom: 0;
+}
+
+.left-triangle{
+    border: 10vw solid transparent;
+    border-left: 3vw solid #ff0000;
+    border-top: 33vw solid #ff0000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-right: 78px;
+}
+
+.header-bg {
+    height: 110vh;
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    top: 0;
+    background-size: contain;
+}
+
+.red-line {
+    padding: 45px 0;
+    background: #ff0000;
+    width: 110%;
+    margin-left: -50px;
+    position: absolute;
+    bottom: 33px;
+    z-index: 3;
+    transform: rotate(12deg);
+  }
+
+.tell{
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+}
+
+.rev-call{
+    color: black;
+}
+
+.header-bg-img {
+    width: 750px;
+    img{
+        width: 100%;
+    }
+}
+
+.header-list {
+    padding-left: 30px;
+}
+.header-title-text{
+    color: #ff0000;
+    font-size: 36px;
+    line-height: 70px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.header-list-item {
+    width: 450px;
+    height: auto;
+    margin-bottom: 24px;
+    &:last-child {
+        margin-bottom: 54px;
+    }
+}
+
+.header-list-item-text {
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 55px;
+    color: black;
+    margin-left: 15px;
+}
+
+.btn-chos-item {
+    @include button;
+    border: none;
+    background-color: #ff0000;
+    max-width: 357px;
+    height: 75px;
+    font-size: 22px;
+    box-shadow: 2px 10px 14px rgba(255, 0, 0, 0.3);
+    span{
+        @include button_span;
+        color: white;
+        left:0;
+        font-size: 26px;
+    }
+}
+
+
+
+
+
+
+
